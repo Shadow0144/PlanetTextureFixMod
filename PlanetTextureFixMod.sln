@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetTextureFixMod", "PlanetTextureFixMod\PlanetTextureFixMod.csproj", "{840E9955-E51A-4472-8ED0-83C435068446}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{840E9955-E51A-4472-8ED0-83C435068446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{840E9955-E51A-4472-8ED0-83C435068446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{840E9955-E51A-4472-8ED0-83C435068446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{840E9955-E51A-4472-8ED0-83C435068446}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7764ADF1-1D63-4AB9-846F-86F3B0E1F2CA}
+	EndGlobalSection
+EndGlobal
