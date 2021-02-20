@@ -1,18 +1,20 @@
 ﻿using Harmony;
+using Database;
+using System;
 
 namespace PlanetTextureFixMod
 {
     public class Patches
     {
-        [HarmonyPatch(typeof(Db))]
-        [HarmonyPatch("Initialize")]
-        public class Db_Initialize_Patch
+        [HarmonyPatch(typeof(SpaceDestinationTypes), MethodType.Constructor, new Type[] {typeof(ResourceSet)})]
+        public class SpaceDestinationTypes_Patch
         {
-            public static void Postfix()
+            public static void Postfix(SpaceDestinationTypes __instance)
             {
                 Debug.Log("Fixing planet textures...");
 
-                // Enter code here
+                __instance.IcyDwarf.spriteName = "icyAsteroid";
+                __instance.SaltDesertPlanet.spriteName = "new_13";
 
                 Debug.Log("...Planet textures fixed.");
             }
