@@ -54,8 +54,14 @@
     <Compile Include="Patches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="mod_info.yaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetPath)" "$(USERPROFILE)\Documents\Klei\OxygenNotIncluded\mods\Dev\Planet Texture Fix\" /Y</PostBuildEvent>
+    <PostBuildEvent>xcopy "$(TargetPath)" "$(USERPROFILE)\Documents\Klei\OxygenNotIncluded\mods\Dev\Planet Texture Fix\" /Y
+xcopy "$(TargetDir)mod_info.yaml" "$(USERPROFILE)\Documents\Klei\OxygenNotIncluded\mods\Dev\Planet Texture Fix\" /Y</PostBuildEvent>
   </PropertyGroup>
 </Project>
